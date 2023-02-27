@@ -1,0 +1,150 @@
+@media(max-width:500px) {
+    .ul-li-div {
+        display: none;
+    }
+
+    .contect-div {
+        display: none;
+    }
+
+    .add-to-cart-div {
+        display: none;
+    }
+    #top-nav{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    #secound-nav{
+        border: none;
+        background-color: black;
+        width: 300px;
+        position: absolute;
+        transition: 1s;
+        padding: 0;
+    }
+    .bar-click{
+        left: 0%;
+    }
+    #secound-nav ul li{
+        width: 100%;
+    }
+
+    .bar-icon {
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    #top-nav {
+        padding: 20px;
+    }
+}
+
+@media(max-width:500px) {
+    .main-backgroung-content1 {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .semi-main-background1 h1 {
+        font-size: 40px;
+    }
+
+    .semi-main-background1 h2 {
+        font-size: 30px;
+    }
+
+    .semi-main-background1 p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:500px) {
+    .section-1 {
+        padding: 0;
+    }
+
+    .semi-section {
+        padding: 0;
+    }
+
+    .advetise1 {
+        height: 300px;
+        width: 100%;
+    }
+
+    .advetise2 {
+        height: 300px;
+        width: 100%;
+    }
+
+    .advetise-content h1 {
+        font-size: 40px;
+
+    }
+}
+
+@media(max-width:500px) {
+    #section2 {
+        padding: 150px 0px 0px 0px;
+    }
+
+    .menu-pizza ul li {
+        padding: 0;
+    }
+
+    .menu-pizza ul li a {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    .wraps-lits-content1 {
+        padding: 0px 50px;
+    }
+
+    .wrap {
+        width: 100%;
+        margin: 20px 0px;
+    }
+}
+
+@media(max-width:500px) {
+    #section3 {
+        background-size: cover;
+        padding: 0;
+    }
+
+    #section4 {
+        padding: 0;
+    }
+
+    #section-6 {
+        padding: 0;
+    }
+
+    .sec {
+        width: 50%;
+    }
+
+    #section-7 {
+        padding: 0px 10px;
+    }
+
+    .footer-icons {
+        padding: 25px;
+    }
+
+    .footer-logo {
+        width: 300px;
+    }
+
+    .footer-address {
+        width: 400px;
+    }
+}

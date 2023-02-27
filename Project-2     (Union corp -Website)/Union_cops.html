@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/union.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Union_Cops</title>
+</head>
+
+<body>
+    <!-- .......................................Header start.................................................  -->
+    <header>
+        <!-- Navigation start....................................................................  -->
+        <nav>
+            <!-- top navbar start  -->
+            <div id="top-nav">
+                <div class="top" id="top-contact">
+                    <p><i class="fa-solid fa-phone"></i> Call Us: +91 9558651814</p>
+                </div>
+                <div class="top" id="top-location">
+                    <p><i class="fa-solid fa-map"></i> Location: San Francisco, California, USA</p>
+                </div>
+                <div class="top" id="top-icons">
+                    <div class="top-icons">
+                        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                        <a href=""> <i class="fa-brands fa-google"></i></a>
+                        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- top navbar End  -->
+
+            <!-- Main Navbar start  -->
+            <div id="main-nav">
+                <div class="logo">
+                    <div class="semi-logo">
+                        <h2>union <span>cops.</span></h2>
+                        <p>finance & consulation</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-bar">
+                        <p><i class="fa-solid fa-bars"></i>MENU</p>
+                    </div>
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">services</a></li>
+                        <li><a href="">work</a></li>
+                        <li><a href="">pricing</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main Navbar End  -->
+        </nav>
+        <!-- Navigation End....................................................................  -->
+        <!-- main image contaner start .............................................................. -->
+        <div class="slider_main">
+            <div id="main-image" class="slider">
+                <div class="main-content">
+                    <h1>We're Always Here To Give Financial Help!</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live
+                        the blind texts</p>
+                    <h2><a href="">get start<i class="fa-solid fa-arrow-right"></i></a></h2>
+                </div>
+            </div>
+            <div id="main-image1" class="slider">
+                <div class="main-content">
+                    <h1>Build Your Financial Plan With Our Specialists</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live
+                        the blind texts</p>
+                    <h2><a href="">get start<i class="fa-solid fa-arrow-right"></i></a></h2>
+                </div>
+            </div>
+        </div>
+        <script>
+            key = 0;
+            function left_slider() {
+
+                img_slider = document.getElementsByClassName('slider');
+
+                for (i = 0; i < img_slider.length; i++) {
+                    img_slider[i].style.transition = '1s';
+                    img_slider[0].style.left = "-100%";
+                    img_slider[1].style.left = "100%";
+
+                }
+                img_slider[key].style.left = "0%";
+                key++;
+                if (key == 2) {
+                    key = 0;
+                }
+
+                setTimeout(" left_slider()", 5000)
+            }
+
+            left_slider()
+        </script>
+        <!-- main image contaner End .............................................................. -->
+    </header>
+    <!-- .......................................Header End.................................................  -->
+
+    <!-- ..........................................Section Start........................................... -->
+    <section>
+
+        <!-- contanner-1(More Then) Start................................................  -->
+        <div id="contanner1-more-then">
+            <div class="main-more-then">
+                <!-- first contanner start  -->
+                <div class="more-then-box">
+                    <div class="box" id="box1">
+                        <div class="semi-box" id="semi-box1">
+                            <h1><span><i class="fa-solid fa-people-carry-box"></i></span></h1>
+                            <h2>Professional Consultants</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="box" id="box2">
+                        <div class="semi-box" id="semi-box2">
+                            <h1><span><i class="fa-solid fa-chart-simple"></i></span></h1>
+                            <h2>Comprehensive Services</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="box" id="box3">
+                        <div class="semi-box" id="semi-box3">
+                            <h1><span><i class="fa-solid fa-money-check-dollar"></i></span></h1>
+                            <h2>A Culture that Delivers</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="box" id="box4">
+                        <div class="semi-box" id="semi-box4">
+                            <h1><span><i class="fa-solid fa-calendar-days"></i></span></h1>
+                            <h2>Industry Experience</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- first contanner End  -->
+                <!-- Secound contanner start  -->
+                <div class="more-then-content">
+                    <p>ABOUT UNION CORPORATION</p>
+                    <h1>More than 40M+ Trusted Our Financial & Conusultation Institution</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.</p>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+                    <p><a href="">LEARN MORE</a></p>
+                </div>
+                <!-- Secound contanner End  -->
+            </div>
+        </div>
+        <!-- contanner-1 (More Then) End................................................  -->
+
+        <!-- contanner-2 (Quality) start ............................................................... -->
+        <div id="contanner2-quality">
+            <div class="main-quality-contanner">
+                <div class="quality">
+                    <p>ABOUT UNION CORPORATION</p>
+                    <h1>Quality Makes the Belief for Customers</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean</p>
+                    <div class="div-button">
+                        <a href="">
+                            <div class="button"><i class="fa-solid fa-play"></i></div>
+                        </a>
+                        <span class="name">WATCH VIDEO </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contanner-2 (Quality) End ............................................................... -->
+
+
+        <!-- contanner-3(Exlusive Service) start ............................................................... -->
+        <div id="contanner3-exclusive-service">
+            <div class="headding">
+                <p>SERVICES</p>
+                <h1>Our Exclusive Services We Offer For You</h1>
+            </div>
+            <!-- main service contanner start  -->
+            <div class="main-service">
+                <div class="semi-service">
+                    <!-- 8-service contanner start  -->
+                    <div class="service">
+                        <div class="s-icon">
+                            <div class="icon1">
+                                <i class="fa-brands fa-playstation"></i>
+                            </div>
+                        </div>
+                        <div class="s-content">
+                            <h2>Financial Planning</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="s-icon">
+                            <div class="icon1">
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </div>
+                        </div>
+                        <div class="s-content">
+                            <h2>Investments Management</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="s-icon">
+                            <div class="icon1">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                        </div>
+                        <div class="s-content">
+                            <h2>Business Loan</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="s-icon">
+                            <div class="icon1">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                        </div>
+                        <div class="s-content">
+                            <h2>Taxes Consulting</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="s-icon">
+                            <div class="icon1">
+                                <i class="fa-solid fa-hippo"></i>
+                            </div>
+                        </div>
+                        <div class="s-content">
+                            <h2>Insurance Consulting</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="s-icon">
+                            <div class="icon1">
+                                <i class="fa-solid fa-face-smile"></i>
+                            </div>
+                        </div>
+                        <div class="s-content">
+                            <h2>Retirement Planning</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="s-icon">
+                            <div class="icon1">
+                                <i class="fa-solid fa-car"></i>
+                            </div>
+                        </div>
+                        <div class="s-content">
+                            <h2>Risk Management</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="s-icon">
+                            <div class="icon1">
+                                <i class="fa-solid fa-umbrella"></i>
+                            </div>
+                        </div>
+                        <div class="s-content">
+                            <h2>Technology Consulting</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8-service contanner End  -->
+            </div>
+            <!-- main service contanner End  -->
+        </div>
+        <!-- contanner-3(Exlusive Service) End............................................................... -->
+
+
+        <!-- Contanner-4(Studies) start ...................................................................... -->
+        <div id="contanner4-studys">
+            <div class="study1">
+                <p>CASE STUDIES</p>
+                <h1>We Take Every Case Studies Very Seriously</h1>
+            </div>
+            <div class="study2">
+                <a href="" class="s-img" id="s-img1">
+                    <div class="s-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="s-text">
+                        Business Finance Consulting
+                    </div>
+                </a>
+                <a href="" class="s-img" id="s-img2">
+                    <div class="s-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="s-text">
+                        Business Finance Consulting
+                    </div>
+                </a>
+                <a href="" class="s-img" id="s-img3">
+                    <div class="s-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="s-text">
+                        Business Finance Consulting
+                    </div>
+                </a>
+                <a href="" class="s-img" id="s-img4">
+                    <div class="s-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="s-text">
+                        Business Finance Consulting
+                    </div>
+                </a>
+            </div>
+            <div class="study3">
+                <p>GREAT REVIEWS FOR OUR SERVICES</p>
+                <h1>Technical Statistics</h1>
+                <div class="main-count">
+                    <div class="semi-count">
+                        <div class="count">
+                            <h2>60</h2>
+                            <h3>YEAR OF EXPERIENCED</h3>
+                        </div>
+                        <div class="count">
+                            <h2>9,200</h2>
+                            <h3>SATISFIED CUSTOMERS</h3>
+                        </div>
+                        <div class="count">
+                            <h2>5,800</h2>
+                            <h3>PROJECT COMPLETED</h3>
+                        </div>
+                        <div class="count">
+                            <h2>100</h2>
+                            <h3>GET AWARDS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contanner-4(Studies) start ...................................................................... -->
+
+
+        <!-- Contanner-5(Leaddership) start ...................................................................... -->
+        <div id="contanner5-leaddership">
+            <div class="team-headding">
+                <p>MEET OUR BRILLIANT MINDS</p>
+                <h1>Our Leadership Team</h1>
+            </div>
+            <!-- main team contanner start  -->
+            <div class="main-team">
+                <div class="semi-team">
+                    <!-- 8 team contanner start  -->
+                    <div class="team">
+                        <div class="team-img" id="team-img1"></div>
+                        <div class="team-content">
+                            <div class="semi-team-content">
+                                <h2>Jason Smith</h2>
+                                <h4>PRESIDENT & CEO</h4>
+                                <div class="team-icon">
+                                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                                <h5>I am an ambitious workaholic, but apart from that, pretty simple person.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-img" id="team-img2"></div>
+                        <div class="team-content">
+                            <div class="semi-team-content">
+                                <h2>Jeffrey Rockenson</h2>
+                                <h4>PRESIDENT & CEO</h4>
+                                <div class="team-icon">
+                                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                                <h5>I am an ambitious workaholic, but apart from that, pretty simple person.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-img" id="team-img3"></div>
+                        <div class="team-content">
+                            <div class="semi-team-content">
+                                <h2>Jason Smith</h2>
+                                <h4>PRESIDENT & CEO</h4>
+                                <div class="team-icon">
+                                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                                <h5>I am an ambitious workaholic, but apart from that, pretty simple person.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-img" id="team-img4"></div>
+                        <div class="team-content">
+                            <div class="semi-team-content">
+                                <h2>Jeffrey Rockenson</h2>
+                                <h4>PRESIDENT & CEO</h4>
+                                <div class="team-icon">
+                                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                                <h5>I am an ambitious workaholic, but apart from that, pretty simple person.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-img" id="team-img5"></div>
+                        <div class="team-content">
+                            <div class="semi-team-content">
+                                <h2>Jeffrey Rockenson</h2>
+                                <h4>PRESIDENT & CEO</h4>
+                                <div class="team-icon">
+                                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                                <h5>I am an ambitious workaholic, but apart from that, pretty simple person.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-img" id="team-img6"></div>
+                        <div class="team-content">
+                            <div class="semi-team-content">
+                                <h2>Jason Smith</h2>
+                                <h4>PRESIDENT & CEO</h4>
+                                <div class="team-icon">
+                                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                                <h5>I am an ambitious workaholic, but apart from that, pretty simple person.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-img" id="team-img7"></div>
+                        <div class="team-content">
+                            <div class="semi-team-content">
+                                <h2>Jeffrey Rockenson</h2>
+                                <h4>PRESIDENT & CEO</h4>
+                                <div class="team-icon">
+                                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                                <h5>I am an ambitious workaholic, but apart from that, pretty simple person.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-img" id="team-img8"></div>
+                        <div class="team-content">
+                            <div class="semi-team-content">
+                                <h2>Jason Smith</h2>
+                                <h4>PRESIDENT & CEO</h4>
+                                <div class="team-icon">
+                                    <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                                <h5>I am an ambitious workaholic, but apart from that, pretty simple person.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 team contanner End  -->
+            </div>
+            <!-- main team contanner End  -->
+        </div>
+        <!-- Contanner-5(Leaddership) End...................................................................... -->
+
+
+        <!-- Contanner-6(Happy=coustomer) Start...................................................................... -->
+        <div id="contanner6-happy-customor">
+            <div class="happy-content">
+                <p>TESTIMONIAL</p>
+                <h1>Happy Customers</h1>
+            </div>
+            <!-- main happy contanner start  -->
+            <div class="main-happy">
+                <div class="semi-happy">
+                    <!-- happy contanner start  -->
+                    <div class="happy" id="happy1">
+                        <div class="icon"><i class="fa-solid fa-broom-ball"></i></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts</p>
+                        <div class="profile">
+                            <div class="p-image" id="p-image1"></div>
+                            <div class="p-name">
+                                <h2>Roger Scott</h2>
+                                <h3>Marketing Manager</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="happy" id="happy2">
+                        <div class="icon"><i class="fa-solid fa-broom-ball"></i></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts</p>
+                        <div class="profile">
+                            <div class="p-image" id="p-image2"></div>
+                            <div class="p-name">
+                                <h2>Roger Scott</h2>
+                                <h3>Marketing Manager</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="happy" id="happy3">
+                        <div class="icon"><i class="fa-solid fa-broom-ball"></i></div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts</p>
+                        <div class="profile">
+                            <div class="p-image" id="p-image3"></div>
+                            <div class="p-name">
+                                <h2>Roger Scott</h2>
+                                <h3>Marketing Manager</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- happy contanner End -->
+            </div>
+            <!-- main happy contanner End  -->
+        </div>
+        <!-- Contanner-6(Happy=coustomer) End...................................................................... -->
+
+
+        <!-- Contanner-7(Blogs)Start...................................................................... -->
+        <div id="contanner7-blogs">
+            <div class="blog-content">
+                <p>OUR BLOG</p>
+                <h1>Recent From Blog</h1>
+            </div>
+            <!-- main-blogs contanner start  -->
+            <div class="main-blog">
+                <div class="semi-blog">
+                    <!-- Blog contanner start  -->
+                    <div class="blog">
+                        <div class="blog-image" id="blog-image1"></div>
+                        <div class="blog-text">
+                            <h5><span><i class="fa-solid fa-user"></i>ADMIN</span> <span><i
+                                        class="fa-solid fa-calendar-days"></i> JAN. 27, 2021</span> </h5>
+                            <h4><a href=""><i class="fa-solid fa-comment"></i>3 COMMENT</a></h4>
+                            <h2>Incorporation is A Big Milestone for Your Business</h2>
+                            <p>A small river named Duden flows by their place.</p>
+                        </div>
+                        <h3><i class="fa-solid fa-link"></i></h3>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-image" id="blog-image2"></div>
+                        <div class="blog-text">
+                            <h5><span><i class="fa-solid fa-user"></i>ADMIN</span> <span><i
+                                        class="fa-solid fa-calendar-days"></i> JAN. 27, 2021</span> </h5>
+                            <h4><a href=""><i class="fa-solid fa-comment"></i>3 COMMENT</a></h4>
+                            <h2>Incorporation is A Big Milestone for Your Business</h2>
+                            <p>A small river named Duden flows by their place.</p>
+                        </div>
+                        <h3><i class="fa-solid fa-link"></i></h3>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-image" id="blog-image3"></div>
+                        <div class="blog-text">
+                            <h5><span><i class="fa-solid fa-user"></i>ADMIN</span> <span><i
+                                        class="fa-solid fa-calendar-days"></i> JAN. 27, 2021</span> </h5>
+                            <h4><a href=""><i class="fa-solid fa-comment"></i>3 COMMENT</a></h4>
+                            <h2>Incorporation is A Big Milestone for Your Business</h2>
+                            <p>A small river named Duden flows by their place.</p>
+                        </div>
+                        <h3><i class="fa-solid fa-link"></i></h3>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-image" id="blog-image4"></div>
+                        <div class="blog-text">
+                            <h5><span><i class="fa-solid fa-user"></i>ADMIN</span> <span><i
+                                        class="fa-solid fa-calendar-days"></i> JAN. 27, 2021</span> </h5>
+                            <h4><a href=""><i class="fa-solid fa-comment"></i>3 COMMENT</a></h4>
+                            <h2>Incorporation is A Big Milestone for Your Business</h2>
+                            <p>A small river named Duden flows by their place.</p>
+                        </div>
+                        <h3><i class="fa-solid fa-link"></i></h3>
+                    </div>
+                </div>
+                <!-- Blog contanner End  -->
+            </div>
+            <!-- main-blogs contanner End  -->
+        </div>
+        <!-- Contanner-7(Blogs) End..................................................................... -->
+
+
+        <!-- Contanner-8(Business) Start..................................................................... -->
+        <div id="contanner8-business">
+            <div class="semi-business">
+                <div class="business-text">
+                    <p>PREPARE FOR TAKEOFF</p>
+                    <h1>Looking for business opportunity?</h1>
+                </div>
+                <div class="business-button">
+                    <a href="">GET START</a>
+                </div>
+            </div>
+        </div>
+        <!-- Contanner-8(Business) End..................................................................... -->
+    </section>
+    <!-- ..........................................Section End.......................................... -->
+
+
+    <!-- /* ...................................................Footer start................................... */ -->
+    <footer>
+        <!-- /* First div Start ...................................................  */ -->
+        <div class="footer-one">
+            <div class="semi-one">
+                <div class="one" id="one1">
+                    <div class="footer-logo">
+                        <h2>union <span>cops.</span></h2>
+                        <h3>finance & consulation</h3>
+                    </div>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+                    <div class="footer-icon">
+                        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                        <a href=""> <i class="fa-brands fa-google"></i></a>
+                        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="one" id="one2">
+                    <h1>Services</h1>
+                    <ul class="footer-ul">
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i><a href="">Financial Planning</a>
+                        </li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i><a href="">Investment
+                                Management</a></li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i><a href="">Business Lone</a></li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i><a href="">Taxes Consulting</a>
+                        </li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i><a href="">Insurance Consulting</a>
+                        </li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i><a href="">Retirement Planning</a>
+                        </li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i><a href="">Risk Management</a></li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i><a href="">Technical Consulting</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="one" id="one3">
+                    <h1>Recent Posts</h1>
+                    <div class="post1">
+                        <div class="img-post" id="img-post1"></div>
+                        <div class="post-text">
+                            <h5><span><i class="fa-solid fa-user"></i>ADMIN</span> <span><i
+                                        class="fa-solid fa-calendar-days"></i> JAN. 27, 2021</span> </h5>
+                            <p>Incorporation is a big milestone for business</p>
+                        </div>
+                    </div>
+                    <div class="post2">
+                        <div class="img-post" id="img-post2"></div>
+                        <div class="post-text">
+                            <h5><span><i class="fa-solid fa-user"></i>ADMIN</span> <span><i
+                                        class="fa-solid fa-calendar-days"></i> JAN. 27, 2021</span> </h5>
+                            <p>Incorporation is a big milestone for business</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="one" id="one4">
+                    <h1>Have a Questions?</h1>
+                    <h3><i class="fa-solid fa-address-book"></i>203 Fake St. Mountain View, San Francisco, California,
+                        USA</h3>
+                    <h3><i class="fa-solid fa-phone"></i>+91 9558651814</h3>
+                    <h3><i class="fa-solid fa-envelope"></i>info@yourdomain.com</h3>
+                </div>
+            </div>
+        </div>
+        <!-- /* First div End...................................................  */ -->
+        <!-- /* Secound div Start ...................................................  */ -->
+        <div class="footer-two">
+            <p>Copyright ©2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by
+                Colorlib</p>
+        </div>
+        <!-- /* Secound div End...................................................  */ -->
+    </footer>
+    <!-- /* ...................................................Footer End................................... */ -->
+</body>
+
+</html>

@@ -1,0 +1,1328 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 5px solid #ff9900;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* header start ............................................................................................ */
+#top-header {
+    padding: 0px 100px 0px 100px;
+    background-color: #fff;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* header logo start.....................................  */
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header logo End ...................................... */
+
+
+/* navbar All manu start ..................................... */
+/* visible menu start  */
+#navbar .main-ul .main-li {
+    display: inline-block;
+    margin-right: 25px;
+    margin-inline-start: 25px;
+}
+
+#navbar .main-ul .main-li .main-a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+#navbar ul .main-li:hover .main-a {
+    color: #ff9900;
+}
+
+#shop:hover .droupdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 90px;
+}
+
+#shop {
+    position: relative;
+}
+
+/* visible menu End  */
+/* navbar droup down manu start  */
+.droupdown-menu {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    padding: 0px 15px;
+    width: 650px;
+    justify-content: space-between;
+    border-radius: 15px;
+    border-top: 5px solid #ff9900;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: #fff;
+    background-image: url("../icecreem images/ice5.jpg");
+    z-index: 1;
+}
+
+.droup {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.icecake li:first-child,
+.milkshake li:first-child,
+.soft li:first-child,
+.kulfi li:first-child,
+.natural li:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px 0px 5px 0px;
+}
+
+#icecake-a,
+#milkshake-a,
+#soft-a,
+#kulfi-a,
+#natural-a {
+    color: #000000;
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#icecake-a:hover,
+#milkshake-a:hover,
+#soft-a:hover,
+#kulfi-a:hover,
+#natural-a:hover {
+    color: #ff9900;
+}
+
+.icecake li,
+.milkshake li,
+.soft li,
+.kulfi li,
+.natural li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.icecake li a,
+.milkshake li a,
+.soft li a,
+.kulfi li a,
+.natural li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.icecake li a:hover,
+.milkshake li a:hover,
+.soft li a:hover,
+.kulfi li a:hover,
+.natural li a:hover {
+    color: #ff9900;
+}
+
+#ice-creem:hover .droupdown-menu-icecreem,
+#cones:hover .droupdown-menu-cones,
+#more:hover .droupdown-menu-more {
+    visibility: visible;
+    opacity: 1;
+    top: 90px;
+}
+
+#ice-creem,
+#cones,
+#more {
+    position: relative;
+}
+
+.droupdown-menu-icecreem,
+.droupdown-menu-cones,
+.droupdown-menu-more {
+    width: 150px;
+    border-radius: 15px;
+    border-top: 5px solid #ff9900;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px;
+    background-color: #fff;
+    background-image: url("../icecreem images/ice5.jpg");
+    z-index: 1;
+}
+
+.droupdown-menu-more {
+    width: 180px;
+}
+
+.icecreem-ul,
+.cones-ul,
+.more-ul {
+    margin-top: 10px;
+}
+
+.icecreem-ul li,
+.cones-ul li,
+.more-ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.icecreem-ul li a,
+.cones-ul li a,
+.more-ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.icecreem-ul li a:hover,
+.cones-ul li a:hover,
+.more-ul li a:hover {
+    color: #ff9900;
+}
+
+/* navbar droup down manu End */
+/* navbar All manu start ..................................... */
+
+
+/* search cart and account link start ........................... */
+#right-link {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.btn-search,
+.btn-ac,
+.btn-cart,
+.bars{
+display: flex;
+align-items: center;
+}
+.bars{
+    display: none;
+}
+
+.btn-search a i,
+.btn-ac a i,
+.btn-cart a i,
+.bars a i{
+    font-size: 25px;
+    color: black;
+}
+
+
+/* search cart and account link End.................................  */
+/* header End  .............................................................................................*/
+
+/* Section Start  .................................................................................................................*/
+/* main image contanner start ................................................................................ */
+#main-image {
+    width: 100%;
+    height: 600px;
+    background-image: url("../icecreem images/ice5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15% 0% 0% 60%;
+}
+
+/* contanner start...........................................  */
+.main-image-content {
+    width: 500px;
+}
+
+.main-image-content p {
+    color: #ff9900;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.main-image-content h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: 900;
+    color: #331a00;
+}
+
+.main-image-content h5 {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #331a00;
+}
+
+.main-image-content p:last-child {
+    outline-offset: 3px;
+    outline: 2px dashed #ff9900;
+    width: 100px;
+    text-align: center;
+    padding: 7px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #ff9900;
+}
+
+.main-image-content p a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* contanner End...........................................  */
+/* main image contanner End ................................................................................ */
+
+
+/* 1st shipping,Money,Gift,and calling Contanner start.......................................................... */
+#contanner1 {
+    padding: 60px 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.conte {
+    width: 220px;
+}
+
+.conte h2 {
+    text-align: center;
+}
+
+.conte h2 i {
+    font-size: 40px;
+    outline-offset: 3px;
+    outline: 2px dashed #ff9900;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: #ff9900;
+}
+
+.shipping i {
+    transform: rotate(-25deg);
+    padding: 9px 0px 0px 5px;
+}
+
+.money i {
+    padding: 9px 0px 0px 0px;
+
+}
+
+.gift i {
+    padding: 9px 0px 0px 0px;
+}
+
+.calling i {
+    padding: 9px 0px 0px 0px;
+}
+
+.conte:hover i {
+    background-color: #ff9900;
+    border: 1px solid #ff9900;
+    animation: rotate 3s linear infinite;
+    color: #fff;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.conte p:nth-child(2) {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.conte p:nth-child(3) {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* 1st shipping,Money,Gift,and calling Contanner End.......................................................... */
+
+
+/* 2nd Top Categories contanner start ......................................................................... */
+#contanner2-top-categori h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+}
+
+.slide-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    margin-top: 20px;
+}
+
+.slide-icon p {
+    height: 30px;
+    width: 150px;
+    background-image: url("../icecreem images/title-image.png");
+    background-repeat: repeat-x;
+    animation: slide 5s linear infinite;
+
+}
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -160px 0;
+    }
+}
+
+.slide-icon i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 12px 14px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.slide-icon i:hover {
+    background-color: #ff9900;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: inset -3px -3px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.top-category {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    flex-wrap: wrap;
+}
+
+
+.top {
+    width: 240px;
+}
+
+.top-img-1 {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: 2px dashed #ff9900;
+    outline-offset: 10px;
+
+}
+
+.top-img-1 img {
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.top:hover .top-img-1 {
+    border: 5px solid #ff9900;
+}
+
+.top:hover img {
+    transform: scale(1.2);
+}
+
+.top h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.top h2 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.top h2 a:hover {
+    color: #ff9900;
+}
+
+.top p {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* 2nd Top Categories contanner End ......................................................................... */
+
+
+/* 3rd Top Product contanner start ........................................................................... */
+#contanner-3-top-product {
+    height: 600px;
+}
+
+#contanner-3-top-product h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+}
+
+#contanner-3-top-product p {
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    background-image: url("../icecreem images/title-image.png");
+    background-repeat: repeat-x;
+    animation: slide 5s linear infinite;
+    margin: 20px 0px 0px 45%;
+
+}
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -160px 0;
+    }
+}
+
+/* main ul and li  and icons contanner start .................................................................. */
+.slide-ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    position: relative;
+}
+
+/* two side icon box slide to channge product start  */
+.slide-ul span i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 12px 14px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.slide-ul span i:hover {
+    background-color: #ff9900;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: inset -3px -3px 10px rgba(0, 0, 0, 0.6);
+}
+/* two side icon box slide to channge product End  */
+.slide-ul ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.slide-ul ul li {
+    width: 110px;
+    list-style: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    position: relative;
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); */
+}
+.slide-ul ul li:nth-child(2) {
+    padding-left: 33px;
+}
+.slide-ul ul li:hover{
+    background-color: #ff9900;
+    box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.6);
+}
+.slide-ul ul li::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    bottom: -5px;
+    left: 45px;
+    transform: rotate(45deg);
+}
+.slide-ul ul li:hover::after{
+    background-color: #ff9900;
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.6);
+} 
+
+.slide-ul ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+}
+
+/*  li ( 1st Freature contanner's)main product contanner start......................  */
+.freature a:hover{
+    color: #fff;
+}
+.main-product-contanner{
+    position: absolute;
+    top: 100%;
+    left: -400px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 30px 0px;
+    flex-wrap: wrap;
+}
+  
+.product{
+    width: 260px;
+}
+
+/* slide hide icon's start  */
+.side-icon1,.side-icon2,.side-icon3,.side-icon4{
+    width: 50px;
+    position: absolute;
+    left: -20px;  
+    transition: 0.5s;
+   opacity: 0;
+}
+.side-icon1 h4,.side-icon2 h4,.side-icon3 h4,.side-icon4 h4{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.side-icon1 h4:hover,.side-icon2 h4:hover,.side-icon3 h4:hover,.side-icon4 h4:hover{
+    background-color: #ff9900;
+    transition: 0.5s;
+}
+.side-icon1 h4 i,.side-icon2 h4 i,.side-icon3 h4 i,.side-icon4 h4 i{
+    font-size: 20px;
+}
+.side-icon1 h4:hover i,.side-icon2 h4:hover i,.side-icon3 h4:hover i,.side-icon4 h4:hover i{
+    color: #fff;
+}
+.product:hover .side-icon1,.product:hover .side-icon2,.product:hover .side-icon3,.product:hover .side-icon4{
+    left: 10px;
+    opacity: 1;
+}
+/* slide hide icon's End  */
+
+/* Add To Cart hidden cart start  */
+.add-to-cart1,.add-to-cart2,.add-to-cart3,.add-to-cart4{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    opacity: 0;
+}
+.add-to-cart1 h6,.add-to-cart2 h6,.add-to-cart3 h6,.add-to-cart4 h6{
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: 2px dashed black;
+    outline-offset: 5px;
+    background-color: #000000;
+}
+.add-to-cart1 h6:hover,.add-to-cart2 h6:hover,.add-to-cart3 h6:hover,.add-to-cart4 h6:hover{
+    background-color: #ff9900;
+    outline:2px dashed #ff9900;
+    transition: 0.5s;
+}
+.add-to-cart1 h6 .add,.add-to-cart2 h6 .add,.add-to-cart3 h6 .add,.add-to-cart4 h6 .add{
+    font-size: 14px;
+    color: #fff;
+}
+.product:hover .add-to-cart1,.product:hover .add-to-cart2,.product:hover .add-to-cart3,.product:hover .add-to-cart4{
+    bottom: 35px;
+    opacity: 1;
+    transition: 0.5s;
+}
+/* Add To Cart hidden cart End  */
+
+/* image and stars start  */
+.p-img{
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+}
+.product img{
+    margin-left: 10px;
+    height: 230px;
+    width: 230px;
+    border-radius: 20px;
+}
+.product .star{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product .star i{
+    color: #ff9900;
+    font-size: 14px;
+}
+/* image and stars End  */
+
+/* product information contanner start  */
+.info h6{
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+.info h6 a{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+.info h6 a:hover{
+    color: #ff9900;
+}
+.info h5{
+    text-align: center;
+    font-size: 16px;
+    color: #ff9900;
+}
+/* product information contanner End  */
+/*  li ( 1st Freature contanner's)main product contanner End.....................  */
+/* 3rd Top Product contanner End ........................................................................... */
+
+/* 4rd Discount contanner Start ........................................................................... */
+#contanner-4-discount{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+
+}
+
+.discount{
+    height: 450px;
+    width: 449px;
+}
+#discount1{
+    background-image: url("../icecreem images/discount1.jpg");
+    background-size: cover;
+}
+#discount3{
+    background-image: url("../icecreem images/discount2.jpg");
+    background-size: cover;
+}
+#discount5{
+    background-image: url("../icecreem images/discount3.jpg");
+    background-size: cover;
+}
+#discount2,#discount4,#discount6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discount-text h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+}
+.discount-text h2{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0px 40px 0px;
+}
+.discount-text p{
+    text-align: center;
+}
+.discount-text p a{
+    background-color: #000000;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    outline: 2px dashed black;
+    outline-offset: 3px;
+}
+.discount-text p a:hover{
+    background-color: #ff9900;
+    outline: 2px dashed #ff9900;
+    color: #000000;
+    transition: 0.5s;
+}
+
+/* 4rd Discount contanner End ........................................................................... */
+
+/* 5rd Latest Blogs contanner Start .......................................................................*/
+
+#contanner-5-latest-blog h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+}
+.latest-slide-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+.latest-slide-icon p {
+    height: 30px;
+    width: 150px;
+    background-image: url("../icecreem images/title-image.png");
+    background-repeat: repeat-x;
+    animation: slide 5s linear infinite;
+}
+.latest-slide-icon i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 12px 14px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.latest-slide-icon i:hover {
+    background-color: #ff9900;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: inset -3px -3px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* latest blog image contanner start ..................................... */
+.latest-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 30px 80px;
+    flex-wrap: wrap;
+}
+
+.latest{
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    width: 30%;
+    border-radius: 20px;
+}
+
+/* image contanner start  */
+.latest-img-1{
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.latest-img-1 img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: 2s;
+}
+.latest:hover .latest-img-1 img{
+    transform: rotate(3deg)scale(1.2);
+}
+/* image contanner End  */
+
+/* Date text contanner start */
+.latest-img-1 h2{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.latest-img-1 h2 p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.latest-img-1 h2 p:first-child{
+    margin: 10px 0px 3px 10px;
+    border-bottom: 1px solid black;
+    width: 40px;
+}
+/* Date text contanner End */
+
+/* Hidden Icon contanner start  */
+.latest-icon{
+    position: absolute;
+    right: -30px;
+    top: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.latest:hover .latest-icon{
+    right: 0;
+    opacity: 1;
+}
+.latest-icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.latest-icon a i{
+    font-size: 16px;
+    color: #000000;
+}
+.latest-icon a:hover{
+    background-color: #ff9900;
+    transition: 0.5s;
+}
+.latest-icon a:hover i{
+    color: #fff;
+}
+/* Hidden Icon contanner End  */
+
+/* information for blogs start */
+.latest-info h1 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+.latest-info h1 a:hover{
+    color: #ff9900;
+}
+.latest-info p{
+    text-align: center;
+    font-size: 18px;
+    width: 90%;
+    margin-left: 20px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.latest-info h3{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0px;
+}
+.latest-info h3 a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #000000;
+    outline: 2px dashed black;
+    outline-offset: 5px;
+    border-radius: 20px;
+}
+.latest-info h3 a:hover{
+    background-color: #ff9900;
+    color: #fff;
+    outline: 2px dashed #ff9900;
+    transition: 0.5s;
+}
+/* information for blogs End */
+/* latest blog image contanner End ..................................... */
+/* 5rd Latest Blogs contanner End .......................................................................*/
+
+
+/* 6rd Special contanner Start .......................................................................*/
+#contanner-6-special h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+}
+.special-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    margin-top: 20px;
+}
+
+.special-icon p {
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    background-image: url("../icecreem images/title-image.png");
+    background-repeat: repeat-x;
+    animation: slide 5s linear infinite;
+}
+.special-icon i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 12px 14px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.special-icon i:hover {
+    background-color: #ff9900;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: inset -3px -3px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.main-special{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+}
+
+.special{
+    width: 260px;
+} 
+/* slide hide icon's start  */
+.s-side-icon1{
+    width: 50px;
+    position: absolute;
+    left: -20px;  
+    transition: 0.5s;
+   opacity: 0;
+}
+.s-side-icon1 h4{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.s-side-icon1 h4:hover{
+    background-color: #ff9900;
+    transition: 0.5s;
+}
+.s-side-icon1 h4 i{
+    font-size: 20px;
+}
+.s-side-icon1 h4:hover i{
+    color: #fff;
+}
+.special:hover .s-side-icon1{
+    left: 10px;
+    opacity: 1;
+}
+/* slide hide icon's End  */
+
+/* Add To Cart hidden cart start  */
+.s-add-to-cart1{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    opacity: 0;
+}
+.s-add-to-cart1 h6{
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: 2px dashed black;
+    outline-offset: 5px;
+    background-color: #000000;
+}
+.s-add-to-cart1 h6:hover{
+    background-color: #ff9900;
+    outline:2px dashed #ff9900;
+    transition: 0.5s;
+}
+.s-add{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.special:hover .s-add-to-cart1{
+    bottom: 35px;
+    opacity: 1;
+    transition: 0.5s;
+}
+/* Add To Cart hidden cart End  */
+
+/* image and stars start  */
+.s-img{
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+}
+.special img{
+    margin-left: 10px;
+    height: 230px;
+    width: 230px;
+    border-radius: 20px;
+}
+.special .s-star{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.special .s-star i{
+    color: #ff9900;
+    font-size: 14px;
+}
+/* image and stars End  */
+
+/* product information contanner start  */
+.s-info h6{
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+.s-info h6 a{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.s-info h6 a:hover{
+    color: #ff9900;
+}
+.s-info h5{
+    text-align: center;
+    font-size: 16px;
+    color: #ff9900;
+}
+
+/* 6rd Special contanner End .......................................................................*/
+
+
+/* 7rd Company contanner Start .......................................................................*/
+#contanner-7-company-name{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+#contanner-7-company-name i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 12px 14px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+#contanner-7-company-name i:hover {
+    background-color: #ff9900;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: inset -3px -3px 10px rgba(0, 0, 0, 0.6);
+}
+.main-company img{
+    padding: 0px 25px;
+}
+
+/* 7rd Company contanner End .......................................................................*/
+
+/* Section End .................................................................................................................*/
+
+/* Footer start..................................................................................................................  */
+footer{
+    margin-top: 30px;
+    background-color: #000000;
+    color: #fff;
+}
+#main-information-extra{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+.extra h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.extra{
+    width: 25%;
+}
+#contact-info i{
+    display: none;
+}
+
+#contact-info p:nth-child(2) span,#contact-info p:nth-child(3) span,#contact-info p:nth-child(4) span,#contact-info p:nth-child(5) span{
+    font-size: 16px;
+    color: #fff;
+}
+#contact-info p:nth-child(2),#contact-info p:nth-child(3),#contact-info p:nth-child(4),#contact-info p:nth-child(5){
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 15px;
+}
+.contact-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-icon a{
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.contact-icon a:hover{
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: silver;
+}
+.contact-icon i{
+    font-size: 20px;
+}
+.contact-icon .fb i{
+    color:  #3b5998 ;
+}
+.contact-icon .twit i{
+    color:  #00acee ;
+}
+.contact-icon .insta i{
+    color: #e95950;
+}
+.contact-icon .you i{
+    color: #FF0000;
+}
+.contact-icon .google i{
+    color: #DB4437;
+}
+
+.contact-icon a{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#information i{
+    display: none;
+}
+
+#information li,#extra li{
+    padding: 10px;
+    list-style: none;
+}
+#information li a,#extra li a{
+    position: relative;
+}
+#information li a:after,#extra li a:after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ff9900;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+#information li a:hover::after,#extra li a:hover::after{
+    width: 100%;
+}
+#information li a:hover,#extra li a:hover{
+    color: #ff9900;
+}
+#information li a,#extra li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+#extra i{
+    display: none;
+}
+#signup p:nth-child(2){
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.6);
+}
+#signup input{
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#signup a{
+    background-color: #ff9900;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#signup a:hover{
+    background-color:#605757;
+}
+#signup a:hover i{
+    color: #ff9900;
+}
+#signup a i{
+    font-size: 18px;
+    color: #fff;
+}
+#signup p:nth-child(5){
+    margin-top: 20px;
+}
+
+
+
+
+.design-by{
+    text-align: center;
+    padding: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+.design-by h2{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+.design-by h2 a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 16px;
+}
+.design-by h2 a:hover{
+    color: #ff9900;
+}
+
+  
+
+
